@@ -45,7 +45,7 @@ FiltEX performs the following functions:
 1.	Create a master folder for FiltEX use. Within this folder, create ‘input’ and ‘output’ folders. 
 2.	Pull the latest version of the FiltEX script from GitHub.
 3.	FiltEX takes input of a wANNOVAR csv file. Before use, go to [wANNOVAR](http://wannovar.wglab.org), enter the VCF and download the resulting CSV file to the ‘input’ folder.
-4.	Load packages if necessary using install.packages()
+4.	Install packages if necessary using install.packages()
 5.	Within FiltEX, enter the master folder location as indicated
 6.	Edit options as desired 
 
