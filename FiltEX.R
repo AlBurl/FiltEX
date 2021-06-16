@@ -15,6 +15,9 @@
 
 #master folder location
 master.folder <- 'Enter/folder/master/folder/location/here'
+
+#input csv file name (without .csv)
+input.file <- 'Enter csv file name here'
   
 #filter out synonymous variants? Enter Y/N. Default = Y.
 syn.filt <- 'Y' 
@@ -26,16 +29,18 @@ MAF<- 0.01
 use.panel <- 'N'
 
 #NB if custom gene panel being used this must in csv format in master folder.
-#if custom gene panel being used enter file name here without .csv 
+#if custom gene panel being used enter file name here (without .csv) 
 panel.name <- 'Enter panel csv file name here'
 
 
-#use Exomiser? Enter Enter Y/N. Default = N. 
+#use Exomiser? Enter Enter Y/N. Default = N.
 use.exomiser <- 'N'
 
 #if using Exomiser, enter working directory of Exomiser folder here
 exomiser.wd <- 'Enter/exomiser/wd/path/here'
 
+#if using Exomiser, enter the yml file name here (without .yml)
+exomiser.input <- 'Enter exact yml file name here'
 
 ##################################################################
 
@@ -55,7 +60,6 @@ library(readr)
 #IMPORT WANNOVAR FILE AND TIDY DATA 
 
 #user input file
-input.file <- readline(prompt="Enter exact wANNOVAR csv file name: ")
 input.path <- paste(master.folder,'/input/',input.file,".csv",sep = "")
 
 #import WANNOVAR CSV file and assign to full_data
@@ -195,8 +199,7 @@ if (use.exomiser == 'Y') {
   setwd(exomiser.wd)
 
   #user input file name
-  input.name <- readline(prompt="Enter exact Exomiser yml file name:")
-  input.yml <- paste(input.name, ".yml", sep = "")
+  input.yml <- paste(exomiser.input, ".yml", sep = "")
 
   #create exomiser command
   exomiser.command <- paste('java -Xms4g -Xmx6g -jar exomiser-cli-12.1.0.jar --analysis examples/',input.yml, sep='')
@@ -205,11 +208,11 @@ if (use.exomiser == 'Y') {
   system(command="cmd.exe", input = exomiser.command)
 
   #create results file names 
-  AD.results.file <- paste(input.name, '_AD.genes.tsv', sep='')
-  AR.results.file <- paste(input.name, '_AR.genes.tsv', sep='')
-  MT.results.file <- paste(input.name, '_MT.genes.tsv', sep='')
-  XD.results.file <- paste(input.name, '_XD.genes.tsv', sep='')
-  XR.results.file <- paste(input.name, '_XR.genes.tsv', sep='')
+  AD.results.file <- paste(exomiser.input, '_AD.genes.tsv', sep='')
+  AR.results.file <- paste(exomiser.input, '_AR.genes.tsv', sep='')
+  MT.results.file <- paste(exomiser.input, '_MT.genes.tsv', sep='')
+  XD.results.file <- paste(exomiser.input, '_XD.genes.tsv', sep='')
+  XR.results.file <- paste(exomiser.input, '_XR.genes.tsv', sep='')
   
   AD.results.path <- paste(exomiser.wd,'/results/',AD.results.file,sep='')
   AR.results.path <- paste(exomiser.wd,'/results/',AR.results.file,sep='')
