@@ -8,14 +8,13 @@
 
 ## Introduction
 
-FiltEX filters, sorts, and formats wANNOVAR CSV files for facile analysis and interpretation of whole exome sequencing results. In addition to standard filtering, FiltEX can perform custom filtering of variants to a custom gene list. The Exomiser tool can also be run within FiltEX, allowing Exomiser variant prioritisation results to be formatted and combined into the results file. The final output is an Excel workbook, allowing filtered and formatted lists to be easily browsed and interpreted.
+FiltEX filters, sorts, and formats ANNOVAR CSV files for facile analysis and interpretation of whole exome sequencing results. In addition to standard filtering, FiltEX can perform custom filtering of variants to a custom gene list. The Exomiser tool can also be run within FiltEX, allowing Exomiser variant prioritisation results to be formatted and combined into the results file. The final output is an Excel workbook, allowing filtered and formatted lists to be easily browsed and interpreted.
 
 ## Requirements
 
 FiltEX uses the following software:
 1.	[RStudio](https://www.rstudio.com/products/rstudio/)
 2.	[Exomiser](https://github.com/exomiser/Exomiser)
-3.	[wANNOVAR](http://wannovar.wglab.org)
 
 **NB: Exomiser is licensed under the GNU Affero General Public License v3.0**
 
@@ -68,12 +67,13 @@ FiltEX performs the following functions:
 
 ## Usage
 
-1.	Ensure the wANNOVAR file is in the ‘input’ folder
-2.	Set up options as desired (see above) 
-3.	Run whole script 
-4.	Enter wANNOVAR file name as prompted in console (**without ‘.csv’**)
-5.	If using Exomiser, enter yml file name as prompted in console (**without ‘.yml’**)
-6.	When the script completes the results Excel file can be found in the output folder. 
+1.	If starting with a VCF file, use [wANNOVAR](http://wannovar.wglab.org) to annotate the file, which generates a csv file. 
+2.	Ensure the wANNOVAR file is in the ‘input’ folder
+3.	Set up options as desired (see above) 
+4.	Run whole script 
+5.	Enter wANNOVAR file name as prompted in console (**without ‘.csv’**)
+6.	If using Exomiser, enter yml file name as prompted in console (**without ‘.yml’**)
+7.	When the script completes the results Excel file can be found in the output folder. 
 
 ## Test data 
 
@@ -89,7 +89,7 @@ University College London Great Ormond Street Institute of Child Health
 
 ## References 
 
-If you use FiltEX, please reference Exomiser and wANNOVAR accordingly:
+If you use FiltEX, please reference Exomiser and ANNOVAR accordingly:
 
 Smedley, Damian, Julius O. B. Jacobsen, Marten Jäger, Sebastian Köhler, Manuel Holtgrewe, Max Schubach, Enrico Siragusa, Tomasz Zemojtel, Orion J. Buske, Nicole L. Washington, William P. Bone, Melissa A. Haendel, and Peter N. Robinson. 2015. 'Next-generation diagnostics and disease-gene discovery with the Exomiser', Nature Protocols, 10: 2004-15.
 
