@@ -45,7 +45,7 @@ FiltEX performs the following functions:
 2.	Pull the latest version of the FiltEX script from GitHub.
 3.	FiltEX takes input of a wANNOVAR csv file. Before use, go to [wANNOVAR](http://wannovar.wglab.org), enter the VCF and download the resulting CSV file to the ‘input’ folder.
 4.	Install packages if necessary using install.packages()
-5.	Within FiltEX, enter the master folder location as indicated
+5.	Within FiltEX, enter the master folder location and csv file name as indicated
 6.	Edit options as desired 
 
 ## Optional: Custom gene panel setup
@@ -60,20 +60,18 @@ FiltEX performs the following functions:
 
 1.	Install [Exomiser](https://github.com/exomiser/Exomiser)
 2.	Test Exomiser in the command line and ensure it works
-3.	Edit the options in FilEX to ‘Y’ for Exomiser, and enter working directory path (the same as used in the command line)
+3.	Edit the options in FilEX to ‘Y’ for Exomiser, and enter working directory path (the same as used in the command line)and yml file name.
 4.	Ensure that the Exomiser command is correct in the Exomiser section of script. This may need adapting depending on the set up of your Exomiser.
 
 **NB: The use of Exomiser through FiltEX has only been tested through Windows currently. The code may need slight adaptation to run through Mac/Linux.**  
 
 ## Usage
 
-1.	If starting with a VCF file, use [wANNOVAR](http://wannovar.wglab.org) to annotate the file, which generates a csv file. 
-2.	Ensure the wANNOVAR file is in the ‘input’ folder
-3.	Set up options as desired (see above) 
-4.	Run whole script 
-5.	Enter wANNOVAR file name as prompted in console (**without ‘.csv’**)
-6.	If using Exomiser, enter yml file name as prompted in console (**without ‘.yml’**)
-7.	When the script completes the results Excel file can be found in the output folder. 
+1.	If starting with a VCF file, use [wANNOVAR](http://wannovar.wglab.org) to annotate the file, which generates a csv file.
+2.	Place csv file in input folder. 
+3.	Set up options as desired (see above). 
+4.	Run whole script. 
+5.	When the script completes the results Excel file can be found in the output folder. 
 
 ## Test data 
 
