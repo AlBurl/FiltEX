@@ -1,6 +1,6 @@
 # FiltEX
 
-**FiltEX filters and formats whole exome sequencing data, with optional application of custom gene panels and Exomiser for variant prioritisation.**
+**FiltEX filters and formats annotated whole exome sequencing data, with optional application of custom gene panels and Exomiser for variant prioritisation.**
 
 **Please note that FiltEX is currently under development.**
 
