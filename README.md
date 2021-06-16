@@ -1,13 +1,10 @@
 # FiltEX
-## !WORK IN PROGRESS!
 
-FiltEX filters and formats whole exome sequencing data, with optional application of custom gene panels and Exomiser for variant prioritisation.
+**FiltEX filters and formats whole exome sequencing data, with optional application of custom gene panels and Exomiser for variant prioritisation.**
 
-**Author: Alice Burleigh** 
+**Please note that FiltEX is currently under development.**
 
-**Date: June 2021** 
 
-**Licensed under MIT License**
 
 ## Introduction
 
@@ -88,7 +85,7 @@ University College London Great Ormond Street Institute of Child Health
 
 ## References 
 
-Please reference Exomiser and wANNOVAR accordingly:
+If you use FiltEX, please reference Exomiser and wANNOVAR accordingly:
 
 Smedley, Damian, Julius O. B. Jacobsen, Marten Jäger, Sebastian Köhler, Manuel Holtgrewe, Max Schubach, Enrico Siragusa, Tomasz Zemojtel, Orion J. Buske, Nicole L. Washington, William P. Bone, Melissa A. Haendel, and Peter N. Robinson. 2015. 'Next-generation diagnostics and disease-gene discovery with the Exomiser', Nature Protocols, 10: 2004-15.
 
