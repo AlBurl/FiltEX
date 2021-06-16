@@ -14,7 +14,7 @@ FiltEX filters, sorts, and formats ANNOVAR CSV files for facile analysis and int
 
 FiltEX uses the following software:
 1.	[RStudio](https://www.rstudio.com/products/rstudio/)
-2.	[Exomiser](https://github.com/exomiser/Exomiser)
+2.	[Exomiser](https://github.com/exomiser/Exomiser) (Optional)
 
 **NB: Exomiser is licensed under the GNU Affero General Public License v3.0**
 
