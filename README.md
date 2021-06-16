@@ -75,6 +75,10 @@ FiltEX performs the following functions:
 5.	If using Exomiser, enter yml file name as prompted in console (**without ‘.yml’**)
 6.	When the script completes the results Excel file can be found in the output folder. 
 
+## Test data 
+
+A test wANNOVAR whole exome sequencing csv file has been included. This data was obtained in vcf format from Exomiser download, and was run through wANNOVAR to generate the csv.  
+
 ## Contact 
 
 Alice Burleigh
